@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-07-26T13:57:53.177Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.72 Safari/537.36" etag="3G4LjLR3hKPpsKPi9baV" version="20.1.3" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2022-07-27T14:05:59.008Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.72 Safari/537.36" etag="zqJ9zlPv-3FJ7TRwNYrG" version="20.1.3" type="github" pages="4">
   <diagram id="0ZRAcLww9Z4tQhr6w7hn" name="Issue">
     <mxGraphModel dx="1414" dy="1330" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -215,7 +215,7 @@
     </mxGraphModel>
   </diagram>
   <diagram name="Redeem" id="bT7661UGmghO6trPoV-j">
-    <mxGraphModel dx="1185" dy="796" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1414" dy="1095" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="vfBMPwkiBUH8z10eMKNy-0" />
         <mxCell id="vfBMPwkiBUH8z10eMKNy-1" parent="vfBMPwkiBUH8z10eMKNy-0" />
@@ -404,6 +404,9 @@
         <mxCell id="wdxPAwM3Nv-QG7UuuUAe-9" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;16) WETH&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rotation=0;fontSize=10;" vertex="1" parent="vfBMPwkiBUH8z10eMKNy-1">
           <mxGeometry x="125" y="430" width="70" height="30" as="geometry" />
         </mxCell>
+        <mxCell id="ip-kquWzPx713ztuC8MF-92" value="1) icETH is transferred from the Rollup to the Bridge.&lt;br style=&quot;font-size: 11px;&quot;&gt;2) icETH is transferred from the Bridge to the EIL Contract.&lt;br style=&quot;font-size: 11px;&quot;&gt;3) A flashloan of WETH is taken out on AAVE.&lt;br style=&quot;font-size: 11px;&quot;&gt;4) WETH is transferred from EIL to the DebtIssuanceModule.&lt;br style=&quot;font-size: 11px;&quot;&gt;5) icETH is transferred from EIL to the DebtIssuanceModule.&lt;br style=&quot;font-size: 11px;&quot;&gt;6), 7), 8) DebtIssuanceModule pays back debt and withdraws astETH.&lt;br style=&quot;font-size: 11px;&quot;&gt;9).asETH is transferred to the EIL contract.&lt;br style=&quot;font-size: 11px;&quot;&gt;10), 11) stETH is withdrawn from AAVE.&lt;br style=&quot;font-size: 11px;&quot;&gt;12), 13) stETH is swapped for WETH on Curve.&lt;br&gt;14) The WETH flashloan is payed back on AAVE.&lt;br style=&quot;font-size: 11px;&quot;&gt;15) WETH is transferred to the bridge.&lt;br style=&quot;font-size: 11px;&quot;&gt;16) WETH is transferred to the Rollup." style="text;whiteSpace=wrap;html=1;fontSize=11;" vertex="1" parent="vfBMPwkiBUH8z10eMKNy-1">
+          <mxGeometry x="710" y="320" width="310" height="220" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
@@ -468,7 +471,7 @@
     </mxGraphModel>
   </diagram>
   <diagram name="Sell/Buy" id="LCFqclzv8k_j3fiAzWxl">
-    <mxGraphModel dx="456" dy="949" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2334" dy="1364" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="hjjtl5JwRGDs4BlqWFFo-0" />
         <mxCell id="hjjtl5JwRGDs4BlqWFFo-1" parent="hjjtl5JwRGDs4BlqWFFo-0" />
@@ -525,30 +528,30 @@
           <mxGeometry x="135" y="430" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="xikb1eX9eZKrKpFyQHmG-0" value="Bridge" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="hjjtl5JwRGDs4BlqWFFo-1">
-          <mxGeometry x="450" y="530" width="80" height="40" as="geometry" />
+          <mxGeometry x="780" y="400" width="80" height="40" as="geometry" />
         </mxCell>
         <mxCell id="xikb1eX9eZKrKpFyQHmG-1" value="Rollup" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="hjjtl5JwRGDs4BlqWFFo-1">
-          <mxGeometry x="290" y="530" width="80" height="40" as="geometry" />
+          <mxGeometry x="620" y="400" width="80" height="40" as="geometry" />
         </mxCell>
         <mxCell id="xikb1eX9eZKrKpFyQHmG-2" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="hjjtl5JwRGDs4BlqWFFo-1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="530" y="540" as="sourcePoint" />
-            <mxPoint x="610" y="540" as="targetPoint" />
+            <mxPoint x="860" y="410" as="sourcePoint" />
+            <mxPoint x="940" y="410" as="targetPoint" />
             <Array as="points" />
           </mxGeometry>
         </mxCell>
         <mxCell id="xikb1eX9eZKrKpFyQHmG-3" value="" style="endArrow=classic;html=1;rounded=0;fontSize=8;entryX=1;entryY=0.75;entryDx=0;entryDy=0;exitX=0;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="hjjtl5JwRGDs4BlqWFFo-1" target="xikb1eX9eZKrKpFyQHmG-0">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="610" y="560" as="sourcePoint" />
-            <mxPoint x="480" y="460" as="targetPoint" />
+            <mxPoint x="940" y="430" as="sourcePoint" />
+            <mxPoint x="810" y="330" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="xikb1eX9eZKrKpFyQHmG-4" value="" style="endArrow=classic;html=1;rounded=0;fontSize=8;entryX=0;entryY=0.25;entryDx=0;entryDy=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" edge="1" parent="hjjtl5JwRGDs4BlqWFFo-1" source="xikb1eX9eZKrKpFyQHmG-1" target="xikb1eX9eZKrKpFyQHmG-0">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="480" y="460" as="sourcePoint" />
-            <mxPoint x="430" y="510" as="targetPoint" />
+            <mxPoint x="810" y="330" as="sourcePoint" />
+            <mxPoint x="760" y="380" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="410" y="540" />
+              <mxPoint x="740" y="410" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -557,30 +560,30 @@
         </mxCell>
         <mxCell id="xikb1eX9eZKrKpFyQHmG-6" value="" style="endArrow=classic;html=1;rounded=0;exitX=-0.017;exitY=0.85;exitDx=0;exitDy=0;entryX=0.998;entryY=0.847;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;" edge="1" parent="hjjtl5JwRGDs4BlqWFFo-1" source="xikb1eX9eZKrKpFyQHmG-0" target="xikb1eX9eZKrKpFyQHmG-1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="540" y="560" as="sourcePoint" />
-            <mxPoint x="590" y="510" as="targetPoint" />
+            <mxPoint x="870" y="430" as="sourcePoint" />
+            <mxPoint x="920" y="380" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="xikb1eX9eZKrKpFyQHmG-7" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;1) ETH&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rotation=0;fontSize=10;" vertex="1" parent="hjjtl5JwRGDs4BlqWFFo-1">
-          <mxGeometry x="385" y="510" width="60" height="30" as="geometry" />
+          <mxGeometry x="710" y="380" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="xikb1eX9eZKrKpFyQHmG-8" value="Uniswap" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="hjjtl5JwRGDs4BlqWFFo-1">
-          <mxGeometry x="610" y="530" width="80" height="40" as="geometry" />
+          <mxGeometry x="940" y="400" width="80" height="40" as="geometry" />
         </mxCell>
         <mxCell id="xikb1eX9eZKrKpFyQHmG-9" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;2) ETH&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rotation=0;fontSize=10;" vertex="1" parent="hjjtl5JwRGDs4BlqWFFo-1">
-          <mxGeometry x="535" y="510" width="60" height="30" as="geometry" />
+          <mxGeometry x="865" y="380" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="xikb1eX9eZKrKpFyQHmG-10" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;3) icETH&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rotation=0;fontSize=10;" vertex="1" parent="hjjtl5JwRGDs4BlqWFFo-1">
-          <mxGeometry x="535" y="560" width="60" height="30" as="geometry" />
+          <mxGeometry x="865" y="430" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="xikb1eX9eZKrKpFyQHmG-11" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;4) icETH&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rotation=0;fontSize=10;" vertex="1" parent="hjjtl5JwRGDs4BlqWFFo-1">
-          <mxGeometry x="385" y="560" width="60" height="30" as="geometry" />
+          <mxGeometry x="715" y="430" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="xikb1eX9eZKrKpFyQHmG-12" value="Selling icETH flow" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=13;fontStyle=1" vertex="1" parent="hjjtl5JwRGDs4BlqWFFo-1">
           <mxGeometry x="170" y="340" width="140" height="30" as="geometry" />
         </mxCell>
         <mxCell id="xikb1eX9eZKrKpFyQHmG-13" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;Buying icETH flow&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=13;fontStyle=1" vertex="1" parent="hjjtl5JwRGDs4BlqWFFo-1">
-          <mxGeometry x="420" y="480" width="140" height="30" as="geometry" />
+          <mxGeometry x="750" y="340" width="140" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
